@@ -14,13 +14,17 @@ class Book:
         """Official representation of the Book instance."""
         return f"Book('{self.title}', '{self.author}', {self.year})"
 from book_class import Book
+
 def main():
     my_book = Book("1984", "George Orwell", 1949)
 
+    # Demonstration
     print(my_book)  
+    
+    # Demonstration
+    print(repr(my_book)) 
 
-    print(repr(my_book))  
-
+    # Deleting
     del my_book
 
 if __name__ == "__main__":
