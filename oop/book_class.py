@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 class Book:
     def __init__(self, title: str, author: str, year: int):
         """Constructor to initialize the Book instance."""
