@@ -12,19 +12,19 @@ class Book:
 
     def __repr__(self) -> str:
         return f"Book('{self.title}', '{self.author}', {self.year})"
-from book_class import Book
+from book_class import Book:
 
 def main():
-    # Creating an instance of Book
+    # Creating a book
     my_book = Book("1984", "George Orwell", 1949)
 
-    # Demonstrating the __str__ method
+    # Demonstration
     print(my_book)  # Expected to use __str__
 
-    # Demonstrating the __repr__ method
-    print(repr(my_book))  # Expected to use __repr__
+    # Demonstration
+    print(repr(my_book))  
 
-    # Deleting a book instance to trigger __del__
+    # Deleting
     del my_book
 
 if __name__ == "__main__":
