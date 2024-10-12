@@ -7,24 +7,17 @@ class Book:
     def __del__(self):
         print(f"Deleting {self.title}")
 
-    def __str__(self) -> str:
+    def __str__(self):
         return f"{self.title} by {self.author}, published in {self.year}"
 
-    def __repr__(self) -> str:
+    def __repr__(self):
         return f"Book('{self.title}', '{self.author}', {self.year})"
-from book_class import Book:
+from book_class import Book
 
 def main():
-    # Creating a book
     my_book = Book("1984", "George Orwell", 1949)
-
-    # Demonstration
     print(my_book)  # Expected to use __str__
-
-    # Demonstration
-    print(repr(my_book))  
-
-    # Deleting
+    print(repr(my_book))  # Expected to use __repr__
     del my_book
 
 if __name__ == "__main__":
